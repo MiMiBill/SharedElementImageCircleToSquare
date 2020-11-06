@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <ImageView
+      android:id="@+id/iv_circle_pan_out"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:src="@mipmap/pan_circle"
+      android:layout_width="100dp"
+      android:layout_height="100dp"/>
+
+
+    <ImageView
+        android:id="@+id/iv_circle_pan_center"
+        app:layout_constraintTop_toTopOf="@id/iv_circle_pan_out"
+        app:layout_constraintStart_toStartOf="@id/iv_circle_pan_out"
+        app:layout_constraintEnd_toEndOf="@id/iv_circle_pan_out"
+        app:layout_constraintBottom_toBottomOf="@id/iv_circle_pan_out"
+        android:layout_margin="10dp"
+        android:src="@mipmap/pan_circle_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:id="@+id/iv_circle_pan_bottom"
+        app:layout_constraintTop_toTopOf="@id/iv_circle_pan_out"
+        app:layout_constraintStart_toStartOf="@id/iv_circle_pan_out"
+        app:layout_constraintEnd_toEndOf="@id/iv_circle_pan_out"
+        android:layout_marginTop="75dp"
+        android:src="@mipmap/pan_bottom"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+
+  <ImageView
+      android:id="@+id/iv_circle_pan_center_btn"
+      app:layout_constraintTop_toTopOf="@id/iv_circle_pan_out"
+      app:layout_constraintStart_toStartOf="@id/iv_circle_pan_out"
+      app:layout_constraintEnd_toEndOf="@id/iv_circle_pan_out"
+      app:layout_constraintBottom_toBottomOf="@id/iv_circle_pan_out"
+      android:layout_margin="10dp"
+      android:src="@mipmap/pan_circle_center_btn"
+      android:layout_width="40dp"
+      android:layout_height="40dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
